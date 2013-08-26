@@ -47,6 +47,7 @@
 
 .badge {
   padding: 0 10px;
+  margin-top: 10px;
   @include font-size(ms(0, 14px));
   @include border-radius(10px);
 }

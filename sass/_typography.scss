@@ -6,7 +6,7 @@ h1,h2,h3,h4,h5,h6 {
   text-rendering: optimizeLegibility;
   @include padding-leader($rhythm-spacing);
   @include adjust-leading-to($rhythm-height);
-  @include padding-trailer($rhythm-spacing);
+  @include padding-trailer($rhythm-spacing - 1);
   a {
     color: $header-link-color;
   }
@@ -15,7 +15,6 @@ h1,h2,h3,h4,h5,h6 {
 @include respond(all-phones) {
 
   h1,h2,h3,h4,h5,h6 { word-wrap: break-word;}
-
 }
 
 h1 {
@@ -31,7 +30,11 @@ h1 {
   }
 }
 h2 { @include font-size($xlarge); }
-h3 { @include font-size($larger);}
+h3 { @include font-size($larger);
+  &.large {
+    @include font-size($xxxlarge);
+  }
+}
 h4 { @include font-size($large);}
 h5 { @include font-size($med);}
 h6 { @include font-size($norm);}
@@ -39,7 +42,7 @@ h6 { @include font-size($norm);}
 @include respond(all-phones) {
 
   h1 { @include font-size($xlarge);}
-  h2 { @include font-size($larger + 6);}
+  h2 { @include font-size($larger + 4);}
 
 }
 
@@ -58,7 +61,7 @@ h6 { @include font-size($norm);}
 p {
   font-family: $body-font-family;
   font-weight: $body-font-weight;
-  @include font-size($base-font-size);
+  @include font-size($base-font-size * 1.6);
   margin-bottom: $base-line-height / 2;
   @include adjust-leading-to(1);
   &.lead {
@@ -151,6 +154,7 @@ em {
 strong {
   font-weight: $font-weight-bold;
   line-height: inherit;
+  color: lighten($grey, 20%);
 }
 
 small {

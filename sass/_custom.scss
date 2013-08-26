@@ -1,5 +1,16 @@
 // Your custom SCSS should be written here...
 
+@mixin links($normal, $hover, $visited, $speed) {
+  	color: $normal;
+	-webkit-transition-duration: $speed;
+	-moz-transition-duration: $speed;
+	-o-transition-duration: $speed;
+	-ms-transition-duration: $speed;
+	transition-duration: $speed;
+  	&:hover { color: $hover; }
+  	&:visited { color: $visited; }
+}
+
 body {
 	background-image:url('../img/white_wave.png');
 	background-repeat:repeat; 
@@ -15,42 +26,36 @@ h4 {
 	line-height: $large;
 }
 
-.slant {
-	font-style: italic;
+.pagehed {
+	h1 {
+		font-weight: 900;
+		padding: 0;
+	}
+	h2 {
+		font-style: italic;
+		font-weight: 100;
+		padding: 0;
+	}
+	h4,h5 {
+		padding: 5px 0;
+	}
 }
 
-.heavy {
+.findme {
+	color: $orange;
+}
+
+.icon-nav {
+	h3 {
+	@include font-size($absurd);
+	@include links(lighten($grey, 10%), $orange, $plum, .3s);
+	text-align: center;
+	}
+	h2 {
+	@include links($taupe, $orange, $plum, .3s);
 	font-weight: 900;
-}
-
-.light{
-	font-weight: 100;
-}
-
-.orange {
-	color: $orange;
-}
-
-.taupe {
-	color: $taupe;
-}
-
-.plum {
-	color: $plum;
-}
-
-.grey {
-	color: $grey;
-}
-
-.hover:hover {
-	color: $orange;
-	-webkit-transition-duration: .3s;
-    -moz-transition-duration: .3s;
-    -o-transition-duration: .3s;
-    -ms-transition-duration: .3s;
-    transition-duration: .3s;
-    transition-timing-function: linear;
+	text-align: center;
+	}
 }
 
 .rotate {
@@ -59,16 +64,12 @@ h4 {
 -webkit-transform:rotate(270deg); /* Safari and Chrome */
 }
 
-.big-icon {
-	@include font-size($absurd);
-}
-
-.center {
-	text-align: center;
-}
-
 .no-gutter {
 	margin-left: 0;
+}
+
+.add-gutter {
+	margin-left: $gutter-in-px;
 }
 
 .egg {
@@ -79,6 +80,22 @@ h4 {
 .full-width {
 	width: 100%;
 	height: 500px;
+	overflow: hidden;
+	margin-bottom: 100px;
+	h2 {
+		@include font-size($xxxlarge);
+		color: #fff;
+		text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 1px #777, 0px 4px 2px #666, 0px 5px 3px #555,0px 6px 4px #444, 0px 7px 5px #333;
+		line-height: $xxxlarge;
+		padding-left:10px;
+		@include filter-gradient(#f7fbfc, #9cbece, vertical); // IE6-9
+		@include background-image(linear-gradient(top,  rgba(247,251,252,0.68) 0%,rgba(217,237,242,0.7) 52%,rgba(156,190,206,0.71) 100%));
+	}
+}
+
+.work {
+	width: 100%;
+	height: 300px;
 	overflow: hidden;
 	margin-bottom: 100px;
 	h2 {

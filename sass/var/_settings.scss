@@ -19,20 +19,20 @@ $nav-distance: 0px; 							// Navigation distance from the top of the viewport
 
 // Typography
 $font-family: "Lato";
-$body-font-family: "Cardo";
+$body-font-family: "Lato";
 $font-style-italic: italic;
 $icons: entypo;
 $font-smoothing: antialiased;
 
 // Font Weights
-$font-weight-bold: 700;
+$font-weight-bold: 900;
 $font-weight-semibold: 600;
 $font-weight-medium: 400;
 $font-weight-regular: 400;
 $font-weight-light: 300;
 $font-weight-thin: 300;
 
-$header-font-weight: $font-weight-thin;
+$header-font-weight: $font-weight-bold;
 $body-font-weight: $font-weight-regular;
 $type-font-weight: $font-weight-regular;
 $link-font-weight: $font-weight-regular;
@@ -42,7 +42,7 @@ $tabs-font-weight: $font-weight-semibold;
 // Vertical Rhythm Spacing
 $base-line-height: ms(1) !default;
 $rhythm-spacing: .168;
-$rhythm-height: .411;
+$rhythm-height: .711;
 
 // Modular Scale Settings
 // http://www.modularscale.com by Tim Brown
@@ -71,13 +71,15 @@ $absurd: ms(10);
 $orange: #FF5335;
 $taupe: #B39C85;
 $turq: #306E73;
-$grey: #3B424D;
+$grey: #262E2E;
+$darkturq: #004350;
 $plum: #1D181F;
+$lightblue: #14A4B8;
 
-$header-font-color: $turq !default;
+$header-font-color: $darkturq !default;
 $header-link-color: darken($turq, 10%) !default;
 $header-link-hover-color: lighten($turq, 20%) !default;
-$body-font-color: #555555 !default;
+$body-font-color: $grey !default;
 $body-link-color: $orange !default;
 $body-link-hover-color: $orange !default;
 
@@ -86,11 +88,11 @@ $global-bg-color: #fff;
 $navbar-color: #4a4d50;
 $navbar-link-color: #fff;
 
-$primary-color: #3085d6;
-$secondary-color: #42a35a;
-$default-color: #f2f2f2;
-$info-color: #4a4d50;
-$danger-color: #ca3838;
+$primary-color: $lightblue;
+$secondary-color: $orange;
+$default-color: $taupe;
+$info-color: $plum;
+$danger-color: $turq;
 $warning-color: #f6b83f;
 $success-color: #58c026;
 
@@ -114,10 +116,10 @@ $bigger-radius: 8px;
 
 // Buttons
 // Font Sizing
-$xlarge-button-font-size: $larger;
-$large-button-font-size: $large;
-$medium-button-font-size: $norm;
-$small-button-font-size: $small;
+$xlarge-button-font-size: $xlarge;
+$large-button-font-size: $larger;
+$medium-button-font-size: $larger;
+$small-button-font-size: $large;
 // Padding
 $default-button-padding: $med;
 // Height
