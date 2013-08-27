@@ -30,11 +30,7 @@ h1 {
   }
 }
 h2 { @include font-size($xlarge); }
-h3 { @include font-size($larger);
-  &.large {
-    @include font-size($xxxlarge);
-  }
-}
+h3 { @include font-size($larger);}
 h4 { @include font-size($large);}
 h5 { @include font-size($med);}
 h6 { @include font-size($norm);}

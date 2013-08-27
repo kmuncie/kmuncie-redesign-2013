@@ -36,7 +36,7 @@
 </head>
 
 <body>
-<div class="navbar row">
+<nav class="navbar row">
   <!-- Toggle for mobile navigation, targeting the <ul> -->
   <a class="toggle" gumby-trigger=".navbar > ul" href="#"><i class="icon-menu"></i></a>
   <ul class="twelve columns centered">
@@ -53,24 +53,24 @@
       <a href="http://kmuncie.com/blog/" title="Blog"><i class="icon-book"></i></a>
     </li>
   </ul>
-</div>
+</nav>
 
-  <div class="row">
-    <div class="ten columns">
-      <h1>Work</h1>
-    </div>
-    <div class="ten columns push_one">
-      <h2 class="lead">You're a brilliant business person...</h2>
-      <p>but your website isn't helping your business. You need a website that truly helps grow your business. A website that gets ranked highly by Google. <strong>A website that you can be proud of.</strong></p>
-      <p>Take a look at the work I have done for clients in the past. We can work together to create something beautiful, custom, and effective for your business.</p><div class="small metro rounded btn primary switch-float"><a href="#">Get in touch today</a></div>
-    </div>
+<div class="row">
+  <header class="ten columns">
+    <h1>Work</h1>
+  </header>
+  <div class="ten columns push_one">
+    <h2 class="lead">You're a brilliant business person...</h2>
+    <p>but your website isn't helping your business. You need a website that truly helps grow your business. A website that gets ranked highly by Google. <strong>A website that you can be proud of.</strong></p>
+    <p>Take a look at the work I have done for clients in the past. We can work together to create something beautiful, custom, and effective for your business.</p><div class="small metro rounded btn primary switch-float"><a href="#">Get in touch today</a></div>
   </div>
+</div>
 
 <div class="row"><hr></div>
 
-<div class="row">
+<section class="row project">
     <div class="four columns">
-      <h3 class="large">Nyla D' Salon</h3>
+      <h3 data-target="smallbusiness">Nyla D' Salon</h3>
       <li class="danger badge">2012</li>
       <li class="info badge">Small Buisness</li>
       <p>To better reflect the proffesional but fun atmosphere of this business a website was designed with a color scheme to match this boutique salon in Prescott, Arizona. A clean design featuring plenty of white space helps the high end products they specialize in to stand out and attract customers.</p>
@@ -79,13 +79,11 @@
     <div class="eight columns">
       <img src="img/work/nyla-d-salon.jpg">
     </div>
-</div>
+</section>
 
-<div class="row"><hr></div>
-
-<div class="row">
+<section class="row project">
     <div class="four columns">
-      <h3 class="large">B&W Fire Security Systems</h3>
+      <h3>B&W Fire Security Systems</h3>
       <li class="danger badge">2013</li>
       <li class="info badge">Small Buisness</li>
       <p>A fast growing company in the Prescott, AZ area providing fire protection and security systems to residential and business customers. This website features a dark but eyecatching design and uses responsive design techniques to provide the best experience possible no matter what type of device the vistor is using.</p>
@@ -94,32 +92,26 @@
     <div class="eight columns">
       <img src="img/work/bwfire.jpg">
     </div>
-</div>
+</section>
 
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+<section class="row project">
+    <div class="four columns">
+      <h3>Kea - Simple Search</h3>
+      <li class="danger badge">2011</li>
+      <li class="warning badge">Startup</li>
+      <p>A fast growing company in the Prescott, AZ area providing fire protection and security systems to residential and business customers. This website features a dark but eyecatching design and uses responsive design techniques to provide the best experience possible no matter what type of device the vistor is using.</p>
+      <div class="medium metro rounded btn secondary switch-float"><a href="#">Visit the website</a></div>
+    </div>
+    <div class="eight columns">
+      <img src="img/work/Kea-Logo.jpg">
+    </div>
+</section>
+
+<footer class="row">
+  <div class="twelve columns">
+    <p>&copy; 2013 Kevin Muncie - 817-350-6116</p>
+  </div>
+</footer>
 
   <!-- Grab Google CDN's jQuery, fall back to local if offline -->
   <!-- 2.0 for modern browsers, 1.10 for .oldie -->
@@ -141,13 +133,13 @@
   }
   </script>
 
-  <!-- // <script src="js/libs/gumby.js"></script> -->
+  <script src="js/libs/gumby.min.js"></script>
   <script src="js/libs/ui/gumby.navbar.js"></script>
   <script src="js/libs/ui/gumby.parallax.js"></script>
+  <script src="js/libs/ui/gumby.skiplink.js"></script>
 
 <!--   // <script src="js/libs/ui/gumby.retina.js"></script>
   // <script src="js/libs/ui/gumby.fixed.js"></script>
-  // <script src="js/libs/ui/gumby.skiplink.js"></script>
   // <script src="js/libs/ui/gumby.toggleswitch.js"></script>
   // <script src="js/libs/ui/gumby.checkbox.js"></script>
   // <script src="js/libs/ui/gumby.radiobtn.js"></script>
@@ -158,7 +150,7 @@
   // <script src="js/libs/ui/gumby.parallax.js"></script>
   // <script src="js/libs/gumby.init.js"></script> -->
 
-  <script src="js/libs/gumby.min.js"></script>
+  <!-- // <script src="js/libs/gumby.min.js"></script> -->
   <!-- // <script src="js/plugins.js"></script> -->
   <!-- // <script src="js/main.js"></script> -->
 

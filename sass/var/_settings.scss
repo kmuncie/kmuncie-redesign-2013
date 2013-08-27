@@ -71,12 +71,13 @@ $absurd: ms(10);
 $orange: #FF5335;
 $taupe: #B39C85;
 $turq: #306E73;
-$grey: #262E2E;
+$grey: #3b424d;
 $darkturq: #004350;
 $plum: #1D181F;
 $lightblue: #14A4B8;
+$gold: #CCAD31;
 
-$header-font-color: $darkturq !default;
+$header-font-color: $turq !default;
 $header-link-color: darken($turq, 10%) !default;
 $header-link-hover-color: lighten($turq, 20%) !default;
 $body-font-color: $grey !default;
@@ -92,7 +93,7 @@ $primary-color: $lightblue;
 $secondary-color: $orange;
 $default-color: $taupe;
 $info-color: $plum;
-$danger-color: $turq;
+$danger-color: $darkturq;
 $warning-color: #f6b83f;
 $success-color: #58c026;
 
