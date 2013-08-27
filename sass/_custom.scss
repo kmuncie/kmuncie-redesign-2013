@@ -92,11 +92,13 @@ h4 {
 	overflow: hidden;
 	margin-bottom: 100px;
 	h2 {
+		font-weight: 100;
 		@include font-size($xxxlarge);
 		color: #fff;
 		text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 1px #777, 0px 4px 2px #666, 0px 5px 3px #555,0px 6px 4px #444, 0px 7px 5px #333;
 		line-height: $xxxlarge;
-		padding-left:10px;
+		padding:0 0 15px 10px;
+
 		@include filter-gradient(#f7fbfc, #9cbece, vertical); // IE6-9
 		@include background-image(linear-gradient(top,  rgba(247,251,252,0.68) 0%,rgba(217,237,242,0.7) 52%,rgba(156,190,206,0.71) 100%));
 	}
